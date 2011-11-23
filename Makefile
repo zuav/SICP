@@ -4,7 +4,7 @@
 # 
 #
 
-install_dir = /usr/local/share/info
+DESTDIR ?= /usr/local/share/info
 
 
 GZIP     = gzip
@@ -25,11 +25,11 @@ clean:
 	$(RM) *.info *.gz
 
 install: all
-	$(INSTALL) -d $(install_dir)
-	$(INSTALL) -t $(install_dir) --mode=644 sicp.info.gz
+	$(INSTALL) -d $(DESTDIR)
+	$(INSTALL) -t $(DESTDIR) --mode=644 sicp.info.gz
 
 uninstall:
-	$(RM) $(install_dir)/sicp.info.gz
+	$(RM) $(DESTDIR)/sicp.info.gz
 
 sicp.info.gz: sicp.info
 	$(GZIP) $<
