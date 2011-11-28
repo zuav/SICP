@@ -1,8 +1,9 @@
 #!/usr/bin/make -f
 # debian/rules file - sicp
-# Based on sample debian/rules file - for GNU Hello (1.3).
+# Based on debian/rules file - for gawk-doc package (3.1.6).
 # Copyright 1994,1995 by Ian Jackson.
 # Copyright 1998-2007 James Troup
+# Copyright 2011 Alexander Zhukov
 # I hereby give you perpetual unlimited permission to copy,
 # modify and relicense this file, provided that you do not remove
 # my name from the file itself.  (I assert my moral right of
@@ -32,10 +33,10 @@ binary-indep: checkroot build
 	$(install_dir) debian/tmp/usr/share/info/
 	$(install_file) sicp.info.gz debian/tmp/usr/share/info/
 
-	#$(install_dir) debian/tmp/usr/share/doc/$(pkg)
-	#$(install_file) debian/copyright debian/tmp/usr/share/doc/$(pkg)
-	#$(install_file) debian/changelog debian/tmp/usr/share/doc/$(pkg)/changelog.Debian
-	#find $(CURDIR)/debian/tmp/usr/share/doc/$(pkg)/ -maxdepth 1 -type f ! -name copyright | xargs gzip -9
+	$(install_dir) debian/tmp/usr/share/doc/$(pkg)
+	$(install_file) debian/copyright debian/tmp/usr/share/doc/$(pkg)
+	$(install_file) debian/changelog debian/tmp/usr/share/doc/$(pkg)/changelog.Debian
+	find $(CURDIR)/debian/tmp/usr/share/doc/$(pkg)/ -maxdepth 1 -type f ! -name copyright | xargs gzip -9
 
 	dpkg-gencontrol -isp
 	chown -R root.root debian/tmp
