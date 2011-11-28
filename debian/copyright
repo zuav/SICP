@@ -1,0 +1,38 @@
+This work was packaged for Debian by:
+
+    Alexander Zhukov <zuav@yandex.ru> on Wed, 23 Nov 2011 20:27:00 +0400
+
+It was downloaded from:
+
+    http://mitpress.mit.edu/sicp           -- original text in HTML format
+    http://www.neilvandyke.org/sicp-texi/  -- SICP in Texinfo
+
+Upstream Author(s):
+
+    Harold Abelson and Gerald Jay Sussman are the athors of the SICP book.
+
+    Neil Van Dyke converted HTML text into Texinfo format.
+    neil@neilvandyke.org
+
+
+Licenses:
+
+    Structure and Interpretation of Computer Programs by Harold Abelson
+    and Gerald Jay Sussman is licensed under a Creative Commons
+    Attribution-ShareAlike 3.0 Unported License.
+
+    I do no know under what license SICP conversion into Texinfo format
+    is.
+
+
+    The Debian packaging is:
+
+    Copyright (C) 2011 Alexander Zhukov <zuav@yandex.ru>
+    and is licensed under the GPL version 3, see above.
+
+
+On Debian systems, the complete text of the GNU General Public License
+version 3 can be found in "/usr/share/common-licenses/GPL-3".
+
+Reference to the CC license text can fe found at the SICP site.
+

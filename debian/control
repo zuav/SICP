@@ -1,0 +1,15 @@
+Source: sicp
+Section: unknown
+Priority: extra
+Maintainer: Alexander Zhukov <zuav@yandex.ru>
+Build-Depends: debhelper (>= 7.0.50~)
+Standards-Version: 3.8.4
+Homepage: http://mitpress.mit.edu/sicp/
+#Vcs-Git: git://git.debian.org/collab-maint/sicp.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/sicp.git;a=summary
+
+Package: sicp
+Architecture: all
+Description: SICP book
+ This is Structure and Interpretation of Computer Programs book in
+ GNU Info format.

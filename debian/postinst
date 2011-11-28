@@ -1,0 +1,3 @@
+#!/bin/sh -e
+
+install-info --quiet --section "The Algorithmic Language Scheme" "The Algorithmic Language Scheme" /usr/share/info/sicp.info.gz
