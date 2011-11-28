@@ -2,7 +2,7 @@ Source: sicp
 Section: unknown
 Priority: extra
 Maintainer: Alexander Zhukov <zuav@yandex.ru>
-Build-Depends: debhelper (>= 7.0.50~)
+Build-Depends: debhelper (>= 7.0.50~), texinfo
 Standards-Version: 3.8.4
 Homepage: http://mitpress.mit.edu/sicp/
 #Vcs-Git: git://git.debian.org/collab-maint/sicp.git
